@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Safari Adventure</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <h1>🌿 Interactive Safari Adventure</h1>
+    <p>Explore stunning African wildlife through interactive elements and dynamic JavaScript features.</p>
+  </header>
+
+  <!-- Event Handling Demo -->
+  <section class="feature-section">
+    <h2> Event Playground</h2>
+    <button id="colorBtn">Click to Change My Color!</button>
+    <div id="hoverBox">Hover over me!</div>
+    <p>Type anywhere to see keypress events logged in the console.</p>
+    <p id="doubleClickMsg">Double-click this text to reveal a secret message 👀</p>
+  </section>
+
+  <!-- Image Gallery -->
+  <section class="feature-section">
+    <h2>🎮 Wildlife Gallery</h2>
+    <p>Step into the wild with our collection of breathtaking wildlife photography from across Africa.</p>
+    <div class="gallery">
+      <div class="gallery-slide">
+        <img src="https://cdn.pixabay.com/photo/2020/05/28/17/47/impala-5232026_1280.jpg " alt="Impala" class="active" data-caption="A graceful impala in the wild.">
+        <img src="https://cdn.pixabay.com/photo/2022/12/12/17/05/elephants-7651446_1280.jpg " alt="Elephant" data-caption="A herd of elephants walking across the savanna.">
+        <img src="https://cdn.pixabay.com/photo/2020/01/02/00/49/amboseli-national-park-4734711_1280.jpg " alt="Amboseli National Park" data-caption="Beautiful landscape of Amboseli National Park, Kenya.">
+        <img src="https://cdn.pixabay.com/photo/2019/11/03/04/23/kilimanjaro-4597809_1280.jpg " alt="Mount Kilimanjaro" data-caption="Snow-capped Mount Kilimanjaro under a blue sky.">
+      </div>
+
+      <div class="gallery-controls">
+        <button id="prevImg">⬅️ Previous</button>
+        <button id="nextImg">Next ➡️</button>
+      </div>
+
+      <div id="captionBox"></div>
+    </div>
+  </section>
+
+  <!-- Tabs -->
+  <section class="feature-section">
+    <h2> Safari Destinations Overview</h2>
+    <p>Learn more about different safari hotspots across Africa by selecting a tab below.</p>
+    <div class="tabs">
+      <button class="tab active" data-tab="1">Savanna Plains</button>
+      <button class="tab" data-tab="2">Rainforest Trails</button>
+      <button class="tab" data-tab="3">Mountain Views</button>
+    </div>
+    <div class="tab-content">
+      <div id="tab1" class="content active">
+        The Savanna Plains are home to the Big Five: lions, leopards, rhinos, elephants, and buffalos. This is where most iconic safari experiences happen.
+      </div>
+      <div id="tab2" class="content">
+        Deep in the heart of the rainforest, rare primates like chimpanzees and gorillas thrive in lush greenery and dense canopies.
+      </div>
+      <div id="tab3" class="content">
+        Towering peaks like Mount Kilimanjaro and Mount Kenya offer high-altitude safaris with panoramic views and unique alpine ecosystems.
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Validation -->
+  <section class="feature-section">
+    <h2> Sign Up for Safari Alerts</h2>
+    <p>Stay up-to-date with the latest wildlife news, conservation efforts, and travel tips.</p>
+    <form id="signupForm">
+      <label>Your Name:
+        <input type="text" id="name" required placeholder="e.g. Jane Doe">
+      </label><br><br>
+      <label>Email Address:
+        <input type="email" id="email" required placeholder="you@example.com">
+      </label><br><br>
+      <label>Password:
+        <input type="password" id="password" minlength="8" required placeholder="At least 8 characters">
+      </label><br><br>
+      <div id="feedback"></div>
+      <button type="submit">Subscribe Now</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Interactive Safari Adventure | Made with ❤️ </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
